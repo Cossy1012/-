@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>非遗知识介绍</title>
+    <style>
+        .header {
+            display: flex; /* 使用Flexbox布局 */
+            align-items: center; /* 垂直居中对齐子元素 */
+            gap: 20px; /* 设置子元素之间的间距 */
+            flex-direction: column;
+            max-width: 100%; /* 图片宽度不超过容器宽度 */
+            height: auto; /* 保持图片比例 */
+            font-family:'1', serif;
+        }
+        @font-face {
+            font-family: '1';
+            src: url('Aa董其昌岳阳楼记.ttf') format('truetype');
+        }
+        .header img:hover {
+            transform: scale(1.1); /* 鼠标悬停时放大图片 */
+        }
+        .gallery img:hover {
+            transform: scale(1.1); /* 鼠标悬停时放大图片 */
+        }
+        .header img {
+            width: 190px; /* 设置图片宽度 */
+            height: auto; /* 保持图片比例 */
+            object-fit: cover; /* 保持图片比例并填充容器 */
+            
+        }
+        h1{
+            color: antiquewhite;
+            justify-content: center;
+            text-align:center;
+        }
+        h2 {
+            margin: 10px 0; /* 添加一些上下外边距 */
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 创建5列 */
+            grid-template-rows: repeat(2, 1fr); /* 创建2行 */
+            gap: 10px; /* 设置行和列之间的间距 */
+            width: 100%;
+            height: 100%;
+        }
+        .gallery img {
+            width: 100%; /* 图片宽度占满整个单元格 */
+            height: 100%; /* 图片高度占满整个单元格 */
+            object-fit: cover; /* 保持图片比例并填充整个单元格 */
+            border-radius: 10px; /* 添加圆角效果 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        }
+       
+        @media (max-width: 768px) {
+            .gallery a {
+                width: 30%; /* 在小屏幕上显示三列 */
+                margin: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery a {
+                width: 45%; /* 在更小屏幕上显示两列 */
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body background="bc.jpg">
+    <div class="header">
+        <img src="陕小秦.png" alt="陕小秦" >
+        <h2 class="title">陕小秦</h2>
+        <h1 class="title">欢迎来到非遗知识介绍网站</h1>
+        <h2 class="title">川小蜀</h2>
+        <img src="川小蜀.png" alt="川小蜀" >
+    </div>
+    <div class="gallery">
+        <a href="西安鼓乐.html" target="_blank">
+            <img src="images/image6.jpg" alt="图片1">
+        </a>
+        <a href="秦腔.html" target="_blank">
+            <img src="images/image7.jpg" alt="图片2">
+        </a>
+        <a href="凤翔木版年画.html" target="_blank">
+            <img src="images/image8.jpg" alt="图片3">
+        </a>
+        <a href="凤翔泥塑.html" target="_blank">
+            <img src="images/image9.jpg" alt="图片4">
+        </a>
+        <a href="陕北民歌.html" target="_blank">
+            <img src="images/image10.jpg" alt="图片5">
+        </a>
+        <a href="川剧.html" target="_blank">
+            <img src="川剧.jpg" alt="图片6">
+        </a>
+        <a href="蜀绣.html" target="_blank">
+            <img src="蜀绣.jpg" alt="图片7">
+        </a>
+        <a href="四川竹琴.html" target="_blank">
+            <img src="四川竹琴.jpg" alt="图片8">
+        </a>
+        <a href="川江号子.html" target="_blank">
+            <img src="川江号子.jpg" alt="图片9">
+        </a>
+        <a href="绵竹木版年画.html" target="_blank">
+            <img src="绵竹木版年画.jpg" alt="图片10">
+        </a>
+    </div>
+</body>
